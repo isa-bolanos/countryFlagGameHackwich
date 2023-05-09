@@ -56,17 +56,18 @@ struct QuestionView: View {
                     quizManager.reset()
                 } label: {
                     CustomButton(text: "Play Again")
+                }
             }
-        }
             .foregroundColor(.yellow)
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(.cyan)
+        }
     }
-}
-
-struct QuestionView__Previews: PreviewProvider {
-    static var previews: some View {
-        QuestionView()
+    
+    struct QuestionView__Previews: PreviewProvider {
+        static var previews: some View {
+            QuestionView()
+        }
     }
 }
